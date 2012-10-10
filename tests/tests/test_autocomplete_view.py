@@ -17,6 +17,7 @@ class AutocompleteViewTest(WebTestCase):
         expected = [{
             'id': 1,
             'title': 'Joe Doe',
+            'data': [],
             'html': '<div class="big">Joe Doe</div>\n<div class="small">This is Joe!</div>'
         }]
         self.assertEqual(expected, json.loads(response.data))
@@ -25,6 +26,7 @@ class AutocompleteViewTest(WebTestCase):
         expected = [{
             'id': 2,
             'title': 'Mary Alice',
+            'data': [],
             'html': '<div class="big">Mary Alice</div>\n<div class="small">And this is Alice!</div>'
         }]
         self.assertEqual(expected, json.loads(response.data))

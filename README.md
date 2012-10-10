@@ -47,7 +47,7 @@ from autocomplete.views import autocomplete_view
 
 def find_user(query):
     # put your database magic here to fetch items
-    return [{'id': 1, 'title': 'Joe Doe'}]
+    return [{'id': 1, 'title': 'Joe Doe', 'data': []}]
 
 @app.route('/users/autocomplete')
 def autocomplete():

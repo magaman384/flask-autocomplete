@@ -6,9 +6,9 @@ from autocomplete.views import autocomplete_view
 
 def find_user_mock(query):
     if query == 'joe':
-        return [{'id': 1, 'title': 'Joe Doe', 'description': 'This is Joe!'}]
+        return [{'id': 1, 'title': 'Joe Doe', 'description': 'This is Joe!', 'data': []}]
     elif query == 'ali':
-        return [{'id': 2, 'title': 'Mary Alice', 'description': 'And this is Alice!'}]
+        return [{'id': 2, 'title': 'Mary Alice', 'description': 'And this is Alice!', 'data': []}]
     else:
         return []
 
